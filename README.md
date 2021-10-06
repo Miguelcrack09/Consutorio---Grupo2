@@ -1,2 +1,2 @@
-# Consutorio---Grupo2
+# Consultorio---Grupo2
 Proyecto
