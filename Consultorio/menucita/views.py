@@ -2,5 +2,6 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def menucita(request):
-    return HttpResponse("Menu 1")
+    parametros=""
+    return render(request, 'menucita.html')
  
