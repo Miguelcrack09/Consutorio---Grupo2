@@ -9,3 +9,4 @@ urlpatterns = [
     path('menucita/', include ('menucita.urls')),
     path('menuchat/', include ('menuchat.urls'))
 ]
+ 
