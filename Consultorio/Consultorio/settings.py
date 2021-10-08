@@ -39,7 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'registros',
     'iniciosesion',
-    'salaespera'
+    'salaespera',
+    'menucita',
+    'menuchat'
+
     
 ]
 
