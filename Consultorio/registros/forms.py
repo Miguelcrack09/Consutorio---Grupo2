@@ -6,6 +6,7 @@ class Regform(forms.Form):
             ("M", "Masculino"),
             ("OTHER", "Otro"),
             )
+            
     nombre = forms.CharField(max_length=45)
     apellido = forms.CharField(max_length=45)
     edad = forms.IntegerField()

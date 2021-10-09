@@ -40,13 +40,9 @@ INSTALLED_APPS = [
     'registros',
     'iniciosesion',
     'salaespera',
-<<<<<<< Updated upstream
     'menucita',
-    'menuchat'
-
-=======
-    'agendar'
->>>>>>> Stashed changes
+    'menuchat',
+    'agendar',
     
 ]
 

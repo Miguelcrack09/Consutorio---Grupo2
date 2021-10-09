@@ -31,9 +31,10 @@ class Citas(models.Model):
     
     
 
-class Resultado(models.Model):
-    medico = 
-    paciente = 
-    diagnostico = 
-    fecha = models.models.ForeignKey(Citas, verbose_name=_("fecha"), on_delete=models.CASCADE)
-    hora = models.models.ForeignKey(Citas, verbose_name=_("hora"), on_delete=models.CASCADE)
+# class Resultado(models.Model):
+#     medico = 
+#     paciente = 
+#     diagnostico = 
+#     fecha = models.ForeignKey(Citas, verbose_name=_("fecha"), on_delete=models.CASCADE)
+#     hora = models.ForeignKey(Citas, verbose_name=_("hora"), on_delete=models.CASCADE)
+#     models.models.ForeignKey("app.Model", verbose_name=_(""), on_delete=models.CASCADE)
