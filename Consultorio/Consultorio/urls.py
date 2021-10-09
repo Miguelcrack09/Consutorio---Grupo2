@@ -2,12 +2,12 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    # path('admin/', admin.site.urls),
     path('registros/', include('registros.urls')),
     path('iniciosesion/', include('iniciosesion.urls')),
     path('salaespera/', include('salaespera.urls')),
-    #path('citas/', include('citas.urls')),
     path('menucita/', include ('menucita.urls')),
     path('agendar/', include('agendar.urls'))
+
 ]
  
