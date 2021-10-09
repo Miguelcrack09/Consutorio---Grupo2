@@ -18,16 +18,16 @@ class Usuario(models.Model):
         return self.nombre
         
 
-class Citas(models.Model):
-      fecha = models.DateField()
-      hora = models.DateTimeField()
-      paciente = models.ForeignKey(Usuario, null=True, blank=True, on_delete=models.CASCADE)
-      cormobilidad = models
-      sintomas = models.CharField(max_length=45, blank=True, null=True)
-      horassintomas = models.IntegerField(max_length=2, blank=True, null=True)
+# class Citas(models.Model):
+#       fecha = models.DateField()
+#       hora = models.DateTimeField()
+#       paciente = models.ForeignKey(Usuario, null=True, blank=True, on_delete=models.CASCADE)
+#       cormobilidad = models
+#       sintomas = models.CharField(max_length=45, blank=True, null=True)
+#       horassintomas = models.IntegerField(max_length=2, blank=True, null=True)
 
-      def __str__(self):
-          return '{} {} {}'.format(self.paciente, self.fecha, self.hora)
+    #   def __str__(self):
+    #       return '{} {} {}'.format(self.paciente, self.fecha, self.hora)
     
     
 
