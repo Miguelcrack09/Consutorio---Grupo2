@@ -1,3 +1,9 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 
-# Create your views here.
+def hola(request):
+    return HttpResponse("Hola clase")
+
+def miHtml(request):
+    parametros=""
+    return render(request, 'agendar.html')
