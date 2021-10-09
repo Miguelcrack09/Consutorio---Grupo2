@@ -1,13 +1,10 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 from .forms import Regform
 from .models import Usuario
 
-def hola(request):
-    return HttpResponse("Hola clase")
 
 def miHtml(request):
-    form = Regform(request.POST )
+    form = Regform(request.POST or None)
     if form.is_valid():
         form_data = form.cleaned_data
         print ("Deberia aparecer algo aqui...2ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd11111")
@@ -20,7 +17,6 @@ def miHtml(request):
     context = {
         "form": form,
     }
-    parametros=""
     return render(request, 'registros.html', context)
 
  
