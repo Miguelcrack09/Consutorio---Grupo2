@@ -42,8 +42,7 @@ INSTALLED_APPS = [
     'salaespera',
     'menucita',
     'menuchat',
-    'agendar',
-    
+    'agendar',    
 ]
 
 
@@ -114,9 +113,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-LANGUAGE_CODE = 'es-CO'
+LANGUAGE_CODE = 'es-us'
 
-TIME_ZONE = 'UTC-5'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 

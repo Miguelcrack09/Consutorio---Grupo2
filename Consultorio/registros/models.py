@@ -1,8 +1,4 @@
 from django.db import models
-from django.contrib.auth.models import User
-from django.contrib.auth.forms import UserCreationForm
-from django.db.models.deletion import CASCADE
-from django.views.generic import CreateView
 #from django.core.urlresolvers import reverse_lazy
 
 # Create your models here.
