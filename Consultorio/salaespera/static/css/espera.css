@@ -1,0 +1,158 @@
+body {
+    padding: 0px;
+    margin-top: 250px;
+    background-color: #D8E4F7;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+.conteiner {
+    width: 85%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.header {
+    background: #041A3C;
+    color: white;
+    padding: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 17.5vh;
+    z-index: 9999;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo-nav-conteiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation>ul>li {
+    display: inline-block;
+    position: relative;
+}
+
+.navigation>ul>li>a {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+}
+
+.navigation ul li a:hover {
+    background: #ccc;
+}
+
+
+/* sala espera */
+
+.vmain {
+    margin-top: 110px;
+    /*Elegir color para las letras de la sala de espera*/
+    color: blue;
+    font-family: helvetica;
+    font-size: 70px;
+    text-align: center;
+}
+
+.texto {
+    font-family: helvetica;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+/* sala espera */
+
+
+/*submenu*/
+
+.submenu {
+    position: absolute;
+    background: #041A3C;
+    width: 100%;
+    display: none;
+    transition: 1.5s;
+}
+
+.submenu>li>a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    font-family: 'Open sans';
+    text-decoration: none;
+}
+
+.menu>li:hover>.submenu {
+    display: block;
+}
+
+.main {
+    padding-top: 60px;
+}
+
+@media only screen and (max-width: 767px) {
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+    }
+    .navigation {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .navigation ul {
+        display: none;
+    }
+    .navigation ul.show {
+        display: block;
+    }
+    .navigation ul li {
+        display: block;
+    }
+    .navigation ul li a {
+        display: block;
+        padding: 0.5rem 0;
+        transition: all 0.4s linear;
+        border-radius: 5px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .submenu {
+        display: block;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .submenu li {
+        display: none;
+        display: block;
+        padding: 0.5rem 0;
+        transition: all 0.4s linear;
+        border-radius: 5px;
+        background: #ccc;
+    }
+}

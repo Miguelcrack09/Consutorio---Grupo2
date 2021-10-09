@@ -7,9 +7,9 @@ from django.http import HttpResponse
 #     return HttpResponse("Hola clase")
 
 
-# def html(request):
-#     parametros = ""
-#     return render(request, "inicio.html")
+def html(request):
+     parametros = ""
+     return render(request, "inicio.html")
 # Create your views here.
 
 

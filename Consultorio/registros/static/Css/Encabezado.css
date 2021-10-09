@@ -148,7 +148,7 @@ nav ul li a:hover {
     border-radius: 20px;
     padding: 15px;
     margin: 15px;
-    margin-left: 100px;
+    margin-left: 200px;
     margin-right: 700px;
     letter-spacing: 2px;
     font-family: Times New Roman;
@@ -159,12 +159,12 @@ nav ul li a:hover {
 .foto {
     position: absolute;
     top: 100px;
-    right: 80px;
+    right: 150px;
 }
 
 .forma {
-    width: 700px;
-    height: 1320px;
+    width: 600px;
+    height: 930px;
 }
 
 .encabezado2 {
