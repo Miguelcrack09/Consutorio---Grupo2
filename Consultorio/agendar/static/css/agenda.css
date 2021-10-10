@@ -1,6 +1,5 @@
-body {
-    padding: 0px;
-    margin-top: 120px;
+.body {
+    margin-top: 200px;
     background-color: #D8E4F7;
 }
 
@@ -127,16 +126,6 @@ nav ul li a:hover {
     text-align: center;
 }
 
-.prueba1 {
-    border-radius: 20px;
-    border-color: #030A46;
-    background-color: rgb(255, 255, 255, 0.5);
-    padding: 5px;
-    align-items: center;
-    text-align: center;
-    margin: 10px;
-}
-
 .prueba::placeholder {
     background-color: rgb(160, 250, 239, 0.5);
     border-radius: 20px;
@@ -144,55 +133,48 @@ nav ul li a:hover {
 
 .encabezado1 {
     text-align: center;
-    border: solid 4px #ffffff;
+    border: solid 4px red;
     border-radius: 20px;
     padding: 15px;
-    margin: 15px;
-    margin-left: 200px;
-    margin-right: 700px;
-    letter-spacing: 2px;
-    font-family: Times New Roman;
-    font-size: 30px;
-    color: #030A46;
 }
 
 .foto {
-    position: absolute;
-    top: 100px;
-    right: 150px;
+    width: 1100px;
+    height: 1450px;
 }
 
-.forma {
-    width: 550px;
-    height: 1070px;
+.contenedor {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-left: 120px;
+}
+
+.texto-encima {
+    position: absolute;
+    top: -100px;
+    left: 340px;
+    color: red;
+    text-align: center;
+    font-family: Times New Roman;
+    font-size: 70px;
+}
+
+.centrado {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .encabezado2 {
-    border: solid 4px #ffffff;
+    border: solid 4px red;
     border-radius: 20px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-family: Times New Roman;
-    font-size: 30px;
+    font-size: 35px;
     color: #030A46;
-    padding: 15px;
-}
-
-.encabezado3 {
-    margin: 50px;
-    padding: 49px;
-    border: solid 1.4px;
-    border-color: #000000;
-    border-radius: 20px;
-    background-color: #2D56D7;
-}
-
-.encabezado4 {
-    margin: 50px;
-    padding: 49px;
-    border: solid 1.4px;
-    border-color: #000000;
-    border-radius: 20px;
-    background-color: none;
+    padding: 30px;
 }
 
 .boton2:hover {
@@ -218,7 +200,6 @@ nav ul li a:hover {
     font-size: 16px;
     margin: 4px 2px;
     -webkit-transition-duration: 0.4s;
-    /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
     text-decoration: none;
@@ -238,22 +219,10 @@ nav ul li a:hover {
     font-size: 16px;
     margin: 4px 2px;
     -webkit-transition-duration: 0.4s;
-    /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
     text-decoration: none;
     text-transform: uppercase;
-}
-
-.botones {
-    border-radius: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-family: Arial;
-    letter-spacing: 1.5px;
-    margin-right: 10px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -272,14 +241,4 @@ nav ul li a:hover {
         border-radius: 5px;
         background: #ccc;
     }
-    /* sala espera */
-    .vmain {
-        width: 80%;
-        margin: auto;
-        text-align: center;
-    }
-    h1 {
-        text-align: center;
-    }
-    /* sala espera */
 }
