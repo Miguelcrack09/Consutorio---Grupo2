@@ -1,22 +1,28 @@
-from django.shortcuts import render
-from .forms import Regform
-from .models import Usuario
+from django.core.checks import messages
+from django.shortcuts import render, redirect
+from django.http import HttpResponse
+from django.contrib import messages
+from .forms import UsuarioForm
+from .models import Usuario 
 
+def registro(request):
+    if request.method == "POST":
+        form = UsuarioForm(request.POST)
+        if form.is_valid():
+            creado = form.cleaned_data['nombre']
+            messages.success(request, '¡Usuario registrado con exito!' )
+            form.save()
+            return redirect('http://localhost:8000/iniciosesion/html/')
 
-def miHtml(request):
-    form = Regform(request.POST or None)
-    if form.is_valid():
-        form_data = form.cleaned_data
-        print ("Deberia aparecer algo aqui...2ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd11111")
-        abc = form_data.get("nombre")
-        abd = form_data.get("apellido")
-        print ("Deberia aparecer algo aqui...2ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"+abc)
-        obj = Usuario.objects.create(nombre=abc, apellido=abd)
-        print (obj)
-        
-    context = {
-        "form": form,
-    }
+    else:
+        print("No es valido el post")
+        form = UsuarioForm()
+
+    context = {'form': form}
     return render(request, 'registros.html', context)
 
- 
+def eliminar(request, usuario_id):
+    usuario = Usuario.objects.get(id=usuario_id)
+    usuario.delete()
+    return redirect("inicio")
+

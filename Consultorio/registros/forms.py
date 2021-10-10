@@ -1,18 +1,17 @@
-from django import forms
+from django.forms import ModelForm
+from .models import Usuario 
 
-class Regform(forms.Form):
-    OPTIONS = (    
-            ("F", "Femenino"),
-            ("M", "Masculino"),
-            ("OTHER", "Otro"),
-            )
-            
-    nombre = forms.CharField(max_length=45)
-    apellido = forms.CharField(max_length=45)
-    cedula = forms.IntegerField()
-    edad = forms.IntegerField()
-    genero = forms.ChoiceField(choices=OPTIONS)
-    telefono = forms.CharField(max_length=45)
-    correo = forms.EmailField()
-    contraseña= forms.CharField(max_length=50)
+class UsuarioForm(ModelForm):    
+    class Meta:
+        model = Usuario
+        fields = [
+                'nombre',
+                'apellido',
+                'cedula',
+                'edad',
+                'genero',
+                'correo',
+                'telefono',
+                ]
 
+        

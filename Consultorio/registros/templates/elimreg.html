@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+{% load static %}
+<head>
+	<meta charset="Latin1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet"href="{% static 'Css/Encabezado.css' %}">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+	<title>Registro</title>
+
+
+</head>
+<!--Inicio del encabezado-->
+
+<header class="header">
+		<div class="conteiner logo-nav-conteiner">
+        
+			<a href="#" class="logo"> <img src="{% static 'Imagenes/pokemon.gif' %}" width="100" height="100"> </a>
+			<h1>CONSULTORIO VIRTUAL</h1>
+			<span class="menu-icon">Ver menú</span>
+			<nav class="navigation">
+		<ul class="menu">
+
+		<!--Palabras que aparecen en el menu-->
+		<li>
+			<a href="http://localhost:8000/iniciosesion/html/">Login</a>		
+		</li>
+		<!--Fin menu plegable-->	
+	</ul>			
+			</nav>
+		</div>
+	</header>
+<script src="JS/jquery-slim.min.js" ></script>
+<script src="JS/scripts.js" ></script>
+<body bgcolor="#D8E4F7">
+<!--fin del encabezado-->
+<body>
+    <h1>REgistradoooo</h1>
+
+    <ul>
+    {% for paciente in paciente%}
+        <li>{{ paciente }} </li>
+    {% endfor %}
+    </ul>
+</body>
+
+
+			<div class="foto">
+ 				<img class="forma"src="{% static 'Imagenes/doctor2.png' %}">
+			</div>
+		</form>
+{% endblock content %}
+</div>
+
+
+<!--Inicio del footer-->
+		<footer
+	class="text-center text-lg-start text-white"
+	style="background-color: #1c2331"
+	>
+	<!-- Section: Social media -->
+	<section
+	class="d-flex justify-content-between p-4"
+	style="background-color: #0d6efd"
+	>
+	<!-- Left -->
+	<div class="me-5">
+		<span> Tu salud en las mejores manos</span>
+	</div>
+	<!-- Left -->
+
+	<!-- Right -->
+	<div>
+		<a href="" class="text-white me-4">
+			<i class="fab fa-facebook-f"></i>
+		</a>
+		<a href="" class="text-white me-4">
+			<i class="fab fa-twitter"></i>
+		</a>
+		<a href="" class="text-white me-4">
+			<i class="fab fa-google"></i>
+		</a>
+		<a href="" class="text-white me-4">
+			<i class="fab fa-instagram"></i>
+		</a>
+		<a href="" class="text-white me-4">
+			<i class="fab fa-linkedin"></i>
+		</a>
+		<a href="" class="text-white me-4">
+			<i class="fab fa-github"></i>
+		</a>
+	</div>
+	<!-- Right -->
+</section>
+<!-- Section: Social media -->
+
+<!-- Section: Links  -->
+<section class="">
+	<div class="container text-center text-md-start mt-5">
+		<!-- Grid row -->
+		<div class="row mt-3">
+			<!-- Grid column -->
+			<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+				<!-- Content -->
+				<h6 class="text-uppercase fw-bold">Consultorio Online</h6>
+				<hr
+				class="mb-4 mt-0 d-inline-block mx-auto"
+				style="width: 60px; background-color: #7c4dff; height: 2px"
+				/>
+				<p> Agenda tu cita desde la comodidad de tu hogar</p>
+			</div>
+			<!-- Grid column -->
+
+			<!-- Grid column -->
+			<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+				<!-- Links -->
+				<h6 class="text-uppercase fw-bold">Doctores</h6>
+				<hr
+				class="mb-4 mt-0 d-inline-block mx-auto"
+				style="width: 60px; background-color: #7c4dff; height: 2px"
+				/>
+				<p> 
+					<a href="#!" class="text-white">Dr. Chapatin</a>
+				</p>
+				<p>
+					<a href="#!" class="text-white"> Dra. Corazón</a>
+				</p>
+				<p>
+					<a href="#!" class="text-white">Dr. Huesitos</a>
+				</p>
+				<p>
+					<a href="#!" class="text-white">Dra. Angular</a>
+				</p>
+			</div>
+			<!-- Grid column -->
+
+			<!-- Grid column -->
+			<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+				<!-- Links -->
+				<h6 class="text-uppercase fw-bold">Especialidades</h6>
+				<hr
+				class="mb-4 mt-0 d-inline-block mx-auto"
+				style="width: 60px; background-color: #7c4dff; height: 2px"
+				/>
+				<p>
+					<a href="#!" class="text-white">Medicina General</a>
+				</p>
+				<p>
+					<a href="#!" class="text-white">Odontologia</a>
+				</p>
+				<p>
+					<a href="#!" class="text-white">Internista</a>
+				</p>
+				<p>
+					<a href="#!" class="text-white">Urgencias</a>
+				</p>
+			</div>
+			<!-- Grid column -->
+
+			<!-- Grid column -->
+			<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+				<!-- Links -->
+				<h6 class="text-uppercase fw-bold">Contactenos</h6>
+				<hr
+				class="mb-4 mt-0 d-inline-block mx-auto"
+				style="width: 60px; background-color: #7c4dff; height: 2px"
+				/>
+				<p><i class="fas fa-home mr-3"></i> Colombia</p>
+				<p><i class="fas fa-envelope mr-3"></i> consultorio@gmail.com</p>
+				<p><i class="fas fa-phone mr-3"></i> +57 123 456 25</p>
+				<p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+			</div>
+			<!-- Grid column -->
+		</div>
+		<!-- Grid row -->
+	</div>
+</section>
+<!-- Section: Links  -->
+
+<!-- Copyright -->
+<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)"> 
+	© 2020 Copyright: Grupo 2 MisionTIC
+</div>
+</footer>	
+
+</body>
+</html>
