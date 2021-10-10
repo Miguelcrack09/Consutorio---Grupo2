@@ -324,12 +324,25 @@ video{
         <h1 style = "font-family:arial;"> Menú de Chat </h1>
             <p class="vmain" style = "font-family:arial;">Por temas de pandemia y bioseguridad, le recomendamos usar el chat para consultas sencillas o de baja prioridad.
                <hr> Si su consulta es prioritaria, haga click en siguiente.</p>
-            <img  src="{% static 'docse.png' %}" width="400" height="400">
-	
-            <a type="button" class="btn btn-outline-primary btn-lg" href=""> Ingresar al chat</a>
             
-            <a type="button" class="btn btn-outline-info btn-lg" href="">Siguiente</a>
-      
+			<div class="row justify-content-center">
+				<div class="col-auto">
+					<br> <br> <br> <br> <br> <br>
+			<table>
+				<tr>
+					<td class="p-5"><a type="button" class="btn btn-outline-primary btn-lg" href=""> Ingresar al chat</a></td>
+				</tr>
+				<tr>
+					<td class="p-5"><a type="button" class="btn btn-outline-primary btn-lg" href="//localhost:8000/agendar/">Siguiente</a></td>
+				</tr>
+		</table>
+			</div>
+			<div class="col-auto">
+		<img src="{% static 'imagenes/doctor.png' %}" width="400" height="600">
+				</div>
+				</div>	
+			
+
 	</section> 
 <!--
 	</section>

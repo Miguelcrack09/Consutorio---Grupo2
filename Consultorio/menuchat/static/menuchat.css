@@ -118,63 +118,30 @@ nav ul li a:hover {
     }
 }
 
-.prueba {
-    border-radius: 20px;
-    border-color: #030A46;
-    background-color: rgb(255, 255, 255, 0.5);
-    padding: 5px;
-    align-items: center;
-    text-align: center;
-}
-
-.prueba1 {
-    border-radius: 20px;
-    border-color: #030A46;
-    background-color: rgb(255, 255, 255, 0.5);
-    padding: 5px;
-    align-items: center;
-    text-align: center;
-    margin: 10px;
-}
-
-.prueba::placeholder {
-    background-color: rgb(160, 250, 239, 0.5);
-    border-radius: 20px;
-}
-
 .encabezado1 {
     text-align: center;
-    border: solid 4px #ffffff;
+    border: solid 2px #ffffff;
     border-radius: 20px;
-    padding: 15px;
     margin: 15px;
-    margin-left: 200px;
-    margin-right: 700px;
+    padding: 15px;
+    text-align: center;
     letter-spacing: 2px;
     font-family: Times New Roman;
     font-size: 30px;
     color: #030A46;
-}
-
-.foto {
-    position: absolute;
-    top: 100px;
-    right: 150px;
-}
-
-.forma {
-    width: 550px;
-    height: 1070px;
 }
 
 .encabezado2 {
-    border: solid 4px #ffffff;
+    text-align: center;
+    border: solid 2px #6001FC;
     border-radius: 20px;
-    letter-spacing: 2px;
-    font-family: Times New Roman;
-    font-size: 30px;
-    color: #030A46;
+    margin: 15px;
     padding: 15px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: Arial;
+    font-size: 40px;
+    color: #030A46;
 }
 
 .encabezado3 {
@@ -280,6 +247,9 @@ nav ul li a:hover {
     }
     h1 {
         text-align: center;
+    }
+    video {
+        width: 100%;
     }
     /* sala espera */
 }

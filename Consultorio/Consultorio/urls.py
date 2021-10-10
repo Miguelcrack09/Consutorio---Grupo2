@@ -8,6 +8,7 @@ urlpatterns = [
     path('iniciosesion/', include('iniciosesion.urls')),
     path('salaespera/', include('salaespera.urls')),
     path('menucita/', include ('menucita.urls')),
+    path('menuchat/', include ('menuchat.urls')),
     path('agendar/', include('agendar.urls'))
 
 ]
