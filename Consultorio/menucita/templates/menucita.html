@@ -229,10 +229,28 @@ nav ul li a:hover {
 
 	<section class="text-center p-3">
 		<h1 style = "font-family:arial;"> Bienvenid@! </h1>
-		<div>
-			<p class="vmain" style = "font-family:arial;">Por favor dime que necesitas, selecciona una opción.</p>
-			<img src="{% static 'imagenes/docse.png' %}" width="400" height="400">
-        </div>
+		<p class="vmain" style = "font-family:arial;">Por favor dime que necesitas, selecciona una opción.</p>
+		<div class="row justify-content-center">
+			<div class="col-auto">
+				<br> <br> <br> <br> <br> <br> <br>
+		<table>
+			<tr>
+				<td class="p-3"><a type="button" class="btn btn-outline-primary btn-lg" href="http://localhost:8000/menuchat/"> Asignar cita</a></td>
+			</tr>
+			<tr>
+				<td class="p-3"><a type="button" class="btn btn-outline-primary btn-lg" href=""> Formulación medica</a></td>
+			</tr>
+			<tr>
+				<td class="p-3"><a type="button" class="btn btn-outline-primary btn-lg" href=""> Sugerencias, quejas y solicitudes</a></td>
+			</tr>
+	</table>
+		</div>
+		<div class="col-auto">
+	<img src="{% static 'imagenes/doctor.png' %}" width="400" height="600">
+			</div>
+			</div>	
+			
+
 	</section> 
 <!--
 	</section>
