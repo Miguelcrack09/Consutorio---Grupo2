@@ -7,3 +7,6 @@ def hola(request):
 def miHtml(request):
     parametros=""
     return render(request, 'agendar.html')
+
+def crud(request):
+    return render(request,'Crud.php')

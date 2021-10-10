@@ -12,6 +12,7 @@ class Regform(forms.Form):
     cedula = forms.IntegerField()
     edad = forms.IntegerField()
     genero = forms.ChoiceField(choices=OPTIONS)
-    correo = forms.EmailField()
     telefono = forms.CharField(max_length=45)
+    correo = forms.EmailField()
+    contraseña= forms.CharField(max_length=50)
 
