@@ -26,7 +26,7 @@
 
 		<!--Palabras que aparecen en el menu-->
 		<li>
-			<a href="http://localhost:8000/iniciosesion/html/">Login</a>		
+			<a href="http://localhost:8000/iniciosesion/">Login</a>		
 		</li>
 		<!--Fin menu plegable-->	
 	</ul>			
@@ -39,8 +39,10 @@
 <!--fin del encabezado-->
 
 <div class="encabezado1">
-<form class="encabezado2" method="post or none" action="">{% csrf_token %}
+<form class="encabezado2" method="POST" action="">{% csrf_token %}
 {{ form.as_p}}		
+Contraseña:<br>
+<input type="password" name="contraseña" maxlength="45" id="id_contraseña">
 			<input class="boton1" type="submit"  value="Registrarme" />
 			<input class="boton2" type="reset" value="Borrar Formulario" />	
 			<br>

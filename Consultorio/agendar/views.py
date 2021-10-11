@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
-from django.contrib import messages
 from .forms import citasForm
+from .models import Citas
 
 
 def crud(request):
@@ -12,17 +12,20 @@ def miHtml(request):
     return render(request, 'agendar.html')
 
 def agendar(request):
+    print("Entra a agendar")
+    #variable = Citas.objects.all()
+    #variable.get()
     if request.method == "POST":
+        print("request.method: "+request.method)
         form = citasForm(request.POST)
         if form.is_valid():
-            creado = form.cleaned_data['nombre']
-            messages.success(request, '¡Usuario registrado con exito!' )
             form.save()
-            return redirect('http://localhost:8000/iniciosesion/html/')
+            return redirect('http://localhost:8000/iniciosesion/')
 
     else:
-        print("No es valido el post")
+        print("request: "+request.method)
         form = citasForm() 
+        pass
 
     context = {'form': form}
-    return render(request, 'agendar.html')
+    return render(request, 'agendar.html', context)

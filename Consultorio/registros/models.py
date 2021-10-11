@@ -2,30 +2,20 @@ from django.db import models
 #from django.core.urlresolvers import reverse_lazy
 
 # Create your models here.
+
 class Usuario(models.Model):
     nombre = models.CharField(max_length=45, blank=True, null=True)
     apellido = models.CharField(max_length=45, blank=True, null=True)
-    edad = models.IntegerField(max_length=2, blank=True, null=True)
+    cedula = models.IntegerField()
+    edad = models.IntegerField()
     genero = models.CharField(max_length=45, blank=True, null=True)
     correo = models.EmailField()
     telefono = models.CharField(max_length=45, blank=True, null=True)
+    contraseña = models.CharField(max_length=45, blank=True, null=True)
 
     def __str__(self) -> str:
         return self.nombre
         
-
-# class Citas(models.Model):
-#       fecha = models.DateField()
-#       hora = models.DateTimeField()
-#       paciente = models.ForeignKey(Usuario, null=True, blank=True, on_delete=models.CASCADE)
-#       cormobilidad = models
-#       sintomas = models.CharField(max_length=45, blank=True, null=True)
-#       horassintomas = models.IntegerField(max_length=2, blank=True, null=True)
-
-    #   def __str__(self):
-    #       return '{} {} {}'.format(self.paciente, self.fecha, self.hora)
-    
-    
 
 # class Resultado(models.Model):
 #     medico = 

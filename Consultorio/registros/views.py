@@ -8,11 +8,12 @@ from .models import Usuario
 def registro(request):
     if request.method == "POST":
         form = UsuarioForm(request.POST)
-        if form.is_valid():
+        print("Entra a agendar")
+        if form.is_valid():            
             creado = form.cleaned_data['nombre']
             messages.success(request, '¡Usuario registrado con exito!' )
             form.save()
-            return redirect('http://localhost:8000/iniciosesion/html/')
+            return redirect('http://localhost:8000/iniciosesion/')
 
     else:
         print("No es valido el post")

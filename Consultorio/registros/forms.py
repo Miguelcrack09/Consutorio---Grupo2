@@ -10,8 +10,8 @@ class UsuarioForm(ModelForm):
                 'cedula',
                 'edad',
                 'genero',
-                'correo',
                 'telefono',
+                'correo',
                 ]
 
         

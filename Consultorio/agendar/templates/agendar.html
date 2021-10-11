@@ -42,73 +42,73 @@
 <script src="JS/jquery-slim.min.js" ></script>
 <script src="JS/scripts.js" ></script>
 <body class="body">
-	
+{% csrf_token %}
+{{ form.as_p}}		
 <!--fin del encabezado-->
 <div class="contenedor">
 <img class="foto" src="{% static 'Imagenes/portapapeles.png' %}" />
 	<div class="texto-encima">Agenda tu Cita</div>
   	    <div class="centrado">
   			<div class="encabezado1">
-				<form class="encabezado2" method="post" action="data2.php" >
-			
-					Seleccione el día de su cita:<br>
-					<input class="prueba" placeholder="Ingrese sus Apellidos" type="date" name="apellido">
-					<br>
-					Seleccione la hora de su cita:<br>
-					<input class="prueba" placeholder="Ingrese sus Apellidos" type="time" name="apellido">
-					<br>
-					Especialidad:<br>
-					<select class="prueba">
-						<option>
-							Seleccione
-						</option>
-						<option>
-							Medicina general
-						</option>
-						<option>
-							Medicina Interna
-						</option>
-						<option>
-							Psicologia
-						</option>
-						<option>
-							Pediatria
-						</option>
-					</select><br>
-					Enfermedad Base: (Opcional)<br>
-					<label><input class="prueba" type="checkbox" name="apellido">Hipertensión</label>
-					<br>
-					<label><input class="prueba" type="checkbox" name="apellido">Obesidad</label>
-					<br>
-					<label><input class="prueba" type="checkbox" name="apellido">Diabetes</label>
-					<br>
-					<label><input class="prueba" type="checkbox" name="apellido">Otros</label>
-					<br>
-					Sintomas:<br>
-					<input class="prueba" placeholder="Escriba sus sintomas aquí" type="text" name="sintoma">
-					<br>
-					Hace cuánto los tiene:<br>
-					<select class="prueba">
-						<option>
-							Seleccione
-						</option>
-						<option>
-							1 - 2 días
-						</option>
-						<option>
-							3 - 5 días
-						</option>
-						<option>
-							6 - 10 días
-						</option>
-						<option>
-							11 - 15 días
-						</option>
-					</select><br>
-
+				<form class="encabezado2" method="POST" action="" >
+								
+				Seleccione el día de su cita:<br>
+				<input class="prueba"type="date" name="fecha" id="id_fecha">
+				<br>
+				Seleccione la hora de su cita:<br>
+				<input class="prueba" type="time" name="hora" id="id_hora">
+				<br>
+				Especialidad:<br>
+				<select class="prueba">
+					<option>
+						Seleccione
+					</option>
+					<option>
+						Medicina general
+					</option>
+					<option>
+						Medicina Interna
+					</option>
+					<option>
+						Psicologia
+					</option>
+					<option>
+						Pediatria
+					</option>
+				</select><br>
+				Enfermedad Base: (Opcional)<br>
+				<label><input class="prueba" type="checkbox" name="apellido">Hipertensión</label>
+				<br>
+				<label><input class="prueba" type="checkbox" name="apellido">Obesidad</label>
+				<br>
+				<label><input class="prueba" type="checkbox" name="cormobilidad" id="id_cormobilidad">Diabetes</label>
+				<br>
+				<label><input class="prueba" type="checkbox" name="apellido">Otros</label>
+				<br>
+				Sintomas:<br>
+				<input class="prueba" placeholder="Escriba sus sintomas aquí" type="text" >
+				<br>
+				Hace cuánto los tiene:<br>
+				<select class="prueba">
+					<option>
+						Seleccione
+					</option>
+					<option>
+						1 - 2 días
+					</option>
+					<option>
+						3 - 5 días
+					</option>
+					<option>
+						6 - 10 días
+					</option>
+					<option>
+						11 - 15 días
+					</option>
+				</select><br>
 					<br>
 					<input class="boton1" type="submit"  value="Enviar Solicitud" >
-					<input class="boton2" type="reset" value="Borrar">	
+					<input class="boton2" type="reset" value="Borrar">
 					<p><a class="boton1" href="http://localhost:8000/menucita/">Cancelar</a></p>
 					
 				</form>

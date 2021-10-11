@@ -4,7 +4,7 @@ from . import views
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    #path('admin/', admin.site.urls),
     path('', views.agendar, name="Mi primera Html"),
     path('crud/', views.crud, name="Crud"),
 ]
